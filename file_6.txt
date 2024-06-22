@@ -1,0 +1,14 @@
+
+
+    lui x1, 0
+    addi x1, x1, 10
+    addi x2, x0, 0 
+    beq x2, x1, loop_end
+    addi x2, x2, 1 
+    jal x0, loop_start
+
+loop_en
+  
+    fence
+    loop_end2:
+        j loop_end2
